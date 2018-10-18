@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<title>Eason's</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+    height: 100%;
+    color: #777;
+    line-height: 1.8;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+    background-image: url('1.png');
+    min-height: 100%;
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+    background-image: url("2.jpg");
+    min-height: 400px;
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+    background-image: url("4.png");
+    min-height: 400px;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+        min-height: 400px;
+    }
+}
+
+.video-container {
+position: relative;
+padding-bottom: 56.25%;
+padding-top: 30px;
+height: 0;
+overflow: hidden;
+}
+.video-container iframe, .video-container object, .video-container embed {
+position: absolute;
+top: 0;left: 0;
+width: 100%;
+height: 100%;}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="#home" class="w3-bar-item w3-button">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
+    <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+    
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+    <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
+    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+   
+  </div>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity"><span class="w3-hide-small">Eason's</span></span>
+  </div>
+</div>
+
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="about">
+  <h3 class="w3-center">ABOUT ME</h3>
+  <p class="w3-center"><em></em></p>
+  <p>您好，我是林奕升，今年24歲，大學畢業於東海大學電機工程學系，研究所畢業於國立成功大學製造資訊與系統研究所。求學階段的經歷及學習：大學期間透過電機系的基本課程，我具備應用PSpice、HSpice、Altium Designer layout軟體、電子電路原理…等基本能力。此外在課業之餘，我曾擔任東海大學滑板社社長，社長一職培養我具有領導團隊與溝通協調的能力，我認為未來進入職場，我將能快速融入工作群體，並能清楚團隊需求，與工作夥伴共同達成部門的各項目標。由於大學期間全球工業4.0意識興起，使我體認到所學稍嫌不足，並開始積極準備相關領域的課題繼續升學深造於應屆考取國立成功大學製造資訊與系統研究所。研究所主要研究方向：自動控制與資訊系統等相關領域、epcio運動控制卡相關應用、電腦輔助製造UG10.0、程式語言C#、 基於EtherCAT之工具機應用、HTML5、android。碩士論文研究為工具機行動化加工ＣＮＣ整合系統軟體發展;主要為開發建置一Android App與行動化加工伺服器，實現Android終端的行動化控制EtherCAT工具機，使用者可透過此app 即時監控加工現場，有效的解決過去生產製造時機台操作人員受時域和地域限制的問題。</p>
+  <div class="w3-row">
+    <div class="w3-col m6 w3-center w3-padding-large">
+      <p><b><i class="fa fa-user w3-margin-right"></i>林奕升</b></p><br>
+      <img src="33.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="180" height="100">
+    </div>
+
+    <!-- Hide this text on small devices -->
+    <div class="w3-col m6 w3-hide-small w3-padding-large">
+      <p>大學： 私立東海大學(台灣)<br>科系名稱： 電機工程學系<br> 科系類別： 電機電子工程相關 <br>就學期間： 2012/06～2016/06(畢業)</p>
+      
+    <p>研究所： 國立成功大學(台灣)<br>科系名稱： 製造資訊與系統所<br> 科系類別： 電機電子工程相關 <br>就學期間： 2016/09～2018/09(畢業)</p>
+    </div>
+  </div>
+  
+  
+</div>
+
+
+
+<!-- Second Parallax Image with Portfolio Text -->
+<div class="bgimg-2 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-white w3-wide">PORTFOLIO</span>
+  </div>
+</div>
+
+<!-- Container (Portfolio Section) -->
+<div class="w3-content w3-container w3-padding-64" id="portfolio">
+  <h3 class="w3-center">MY WORK</h3>
+    <p>
+        於2014年9月～2016年9月 擔任東海大學滑板社社長一職<br>
+        於2016年12月～2017年12月 擔任實驗室設備管理人員一職<br>
+        設備管理員工作內容：檢修設備、人員設備使用的管理、洽談設備採購<br>
+        於2017年9月～2018年1月擔任電腦輔助製造課程教學助理<br>
+        於2017年7月～2017年12月擔任工業技術研究院補助專題研究計畫106S016結案助理<br>
+        結案工作內容：三軸銑床人機介面實作、UG10建模加工處理、實作報告<br>
+    </p>
+ <h3 class="w3-center">研究成果</h3>
+    <div class="video-container"><iframe width="806" height="453" src="https://www.youtube.com/embed/eNRUcvhpaLE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+    <p>MMP(Mobile Maching Integration Platform):以一android app實作一行動化加工整合平台進行遠端監看及操控工具機加工製造</p>
+    <div class="video-container"><iframe width="806" height="453" src="https://www.youtube.com/embed/leXYzwGx7qk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+    <p>工業技術研究院補助專題研究計畫106S016:以Ｃ#自行開發一人機系統整合該專案之編譯器進行加工製造</p>
+    <div class="video-container"><iframe width="806" height="428" src="https://www.youtube.com/embed/4lIw6IlI4ic" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+    <p>擔任實驗室設備管理人員期間製作一設備監修紀錄網頁:提供完善的檢修資訊與機台ERROR CODE有效提升維修效率</p>
+
+  
+ 
+</div>
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+<!-- Third Parallax Image with Portfolio Text -->
+<div class="bgimg-3 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+     <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
+  </div>
+</div>
+
+<!-- Container (Contact Section) -->
+<div class="w3-content w3-container w3-padding-64" id="contact">
+  <h3 class="w3-center"></h3>
+  <p class="w3-center"><em></em></p>
+
+  <div class="w3-row w3-padding-32 w3-section">
+    <div class="w3-center">
+      <div class="w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Taichung, ROC<br>
+        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Line :eason8335<br>
+        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: eason8335@gmail.com<br>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+  <p>Powered by <a href="" title="Eason" target="_blank" class="w3-hover-text-green"></a></p>
+</footer>
+ 
+<!-- Add Google Maps -->
+
+</body>
+</html>
+
